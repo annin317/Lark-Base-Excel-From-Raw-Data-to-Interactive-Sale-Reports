@@ -2,7 +2,7 @@
 > This project showcases an end-to-end data analysis workflow, from raw accounting data to an automated, interactive sales dashboard. using Excel and Lark Suite. The project showcases real-world business intelligence skills applicable to e-commerce, retail, and B2B sales environments.
 ## 🚀 Project Overview
 This project builds a unified sales performance dashboard that consolidates data from multiple channels and provides leadership with a full Year-to-date, Month-to-date, Weekly overview of revenue, orders, categories, brands, and product performance.
-
+![alt text](https://github.com/annin317/Lark-Base-Excel-From-Raw-Data-to-Interactive-Sale-Reports/blob/2ebe848f13f396ef3c99e674d36611404dda1e9a/Lark-Base-Excel-From-Raw-Data-to-Interactive-Sale-Reports.png)
 The dashboard supports tracking and allows to evaluate performance across all business channels.
 ## 🎯 Business Problem
 The dashboard was created to solve a core business problem:
