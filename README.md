@@ -1,29 +1,38 @@
 # Lark Base & Excel: From Raw Data to Interactive Sale Reports
-> A comprehensive data analytics project showcasing end-to-end sales reporting workflow using Excel and Lark Suite
-## 📊 Project Overview
-This portfolio demonstrates professional sales data analytics capabilities, from raw data extraction to interactive dashboard creation. The project showcases real-world business intelligence skills applicable to e-commerce, retail, and B2B sales environments.
-### Key Highlights
-- **End-to-End Data Pipeline**: Complete workflow from finance system data extraction to interactive dashboards
-- **Data Quality Management**: Systematic approach to data cleaning, outlier detection, and classification
-- **Interactive Visualizations**: Dynamic dashboards enabling real-time business insights
-- **Scalable Architecture**: Reusable frameworks for recurring sales reporting
-- **Business-Focused Insights**: Actionable analytics driving strategic decision-making
-### Business Value
-This portfolio demonstrates how to:
-- Transform raw sales data into actionable business intelligence
-- Identify revenue trends, top-performing products, and regional performance
-- Enable data-driven decision-making through interactive dashboards
-- Streamline reporting processes for efficiency and accuracy
-- Support strategic planning with historical trend analysis
+> This project showcases an end-to-end data analysis workflow, from raw accounting data to an automated, interactive sales dashboard. using Excel and Lark Suite. The project showcases real-world business intelligence skills applicable to e-commerce, retail, and B2B sales environments.
+## 🚀 Project Overview
+This project builds a unified sales performance dashboard that consolidates data from multiple channels and provides leadership with a full Year-to-date, Month-to-date, Weekly overview of revenue, orders, categories, brands, and product performance.
+
+The dashboard supports tracking and allows to evaluate performance across all business channels.
+## 🎯 Business Problem
+The dashboard was created to solve a core business problem:
+> Leadership lacked a single source of truth for actual revenue performance across all sales channels and categories.
+
+This project enables:
+- A consolidated view of real revenue (from accounting system)
+- Easier cross-team evaluation of performance (BOD, Finance, Sales, Marketing, Ops)
+- Faster decision-making with accurate, clean, and standardized reporting
+
+## 📂 Dataset Overview
+- Data source: Internal accounting system
+- Transaction volume: ~100,000+ orders in 2025 (as of Nov 19, 2025)
+- Final merged dataset size: 200,000 – 1,000,000 rows
+- Data fields (selected): Invoice code, SKU, Selling price, Quantity, VAT, Revenue, Warehouse, Product name, Created date, Invoice date, **Address (raw, unstructured)**, Notes & logs
 ## 🛠️ Tools & Technologies
+### Tools
 | Tool | Purpose |
 |------|---------|
 | **Excel** | Data extraction, cleaning, and initial analysis |
 | **Lark Base** | Data organization and table management |
 | **Lark Dashboard** | Interactive visualization and reporting |
 | **Finance System** | Source system for sales data |
-## 📖 Documentation
-### Data Processing Workflow
+### Techniques
+- ETL design
+- Data cleaning & transformation
+- KPI calculation
+- Dashboard design & visualization
+- Address normalization using AI model with custom rules
+## 🔧 Data Processing Workflow
 1. **Data Extraction**
    - Extract sales data from finance system
    - Export to Excel for initial review
@@ -45,26 +54,40 @@ This portfolio demonstrates how to:
    - Build interactive visualizations
    - Configure filters and drill-downs
    - Test and validate outputs
-## 💡 Key Insights & Analysis
-### Regional Analysis
-The sales data reveals strong geographic concentration with **Hồ Chí Minh** accounting for the majority of revenue. This suggests:
-- Opportunity for expansion in underperforming regions
-- Need for targeted marketing in secondary cities
-- Potential for regional distribution optimization
-### Product Performance
-Top 10 products generate significant revenue concentration:
-- **Functional nutrition** dominates sales
-- **Skincare products** show consistent performance
-- Opportunity for product portfolio diversification
-### Channel Strategy
-**B2C channels** drive majority of orders (63.33%), indicating:
-- Strong direct-to-consumer presence
-- Opportunity to strengthen B2B partnerships
-- Need for omnichannel optimization
-## 🎯 Skills Demonstrated
-- **Data Analysis**: Cleaning, transformation, and validation of large datasets
-- **Business Intelligence**: Creating actionable insights from raw data
-- **Visualization**: Designing clear, interactive dashboards
-- **Data Management**: Structuring relational databases in Lark Base
-- **Process Documentation**: Clear methodology and reproducible workflows
-- **Business Acumen**: Understanding sales metrics and KPIs
+## 📊 Dashboard Structure
+The dashboard includes several analytical layers:
+### ✔ Main Overview (YTD)
+- Total revenue & orders
+- Sales by channel
+- Sales by category
+- Sales by brand
+- Sales by province
+- Top 20 products (Sales and transaction)
+### ✔ Monthly & Weekly Breakdown
+- Trendline revenue
+- Category breakdown by time
+- Channel comparison
+- SKU-level drilldown
+### ✔ Channel-Specific Tabs
+Each channel group (B2C, B2B2C, B2B, Mall, Online, Offline…) has a dedicated tab with:
+- Channel revenue
+- Top categories
+- Top SKUs
+- Weekly performance
+  
+**Strength: From one single data source (Lark Base), the dashboard supports deep breakdowns without redundant manual work.**
+  
+## 🔍 Key Insights
+A few notable insights identified from the dashboard:
+1. B2C contributes ~47% of total revenue, making it the most influential channel.
+2. Dairy-related subcategories dominate sales, indicating strong product-market fit.
+3. Top 5 SKUs account for a disproportionately high revenue share, implying product dependency risk.
+4. Offline B2B2C channels, though smaller, generate stable revenue and should be maintained.
+5. Some channels show declining weekly growth, signaling the need for campaign optimization.
+## 🧭 Business Recommendations
+Based on the insights:
+- Strengthen B2C performance, especially high-margin categories.
+- Diversify product portfolio to reduce reliance on top SKUs.
+- Expand winning subcategories (e.g., Dairy) through marketing & bundling.
+- Improve performance in lagging channels through targeted promotions.
+- Invest in regional targeting, using cleaned provincial data.
